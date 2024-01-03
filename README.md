@@ -69,7 +69,7 @@ INFO:root:BestEpoch: 3
 INFO:root:BestTrainScore: 0.9096491228070175  
 INFO:root:BestValidationScore: 0.9096491228070175  
 INFO:root:FinalTestScore: 0.9096491228070175  
-INFO:root:Mean Testscore: **90.34±0.39**
+INFO:root:Mean Testscore: 90.34±0.39
 ```
 
 The semi-supervised learning log results of GA2C on the MUV dataset are as follows:

@@ -1,0 +1,306 @@
+INFO:root:Running tu......
+INFO:root:Using Device: cuda:3
+INFO:root:Seed: 2024
+INFO:root:Namespace(actor_view_lr=0.001, batch_size=128, config='config.yaml', critic_view_lr=0.001, dataset='DD', downstream_classifier='SVC', drop_ratio=0.0, emb_dim=32, epochs=30, eval_interval=5, mlp_edge_model_dim=128, model_lr=0.001, num_gc_layers=3, pooling_type='layerwise', reg_lambda=0.0, seed=2024)
+INFO:root:n_features: 191
+INFO:root:Before training Embedding Eval Scores: Train: 0.7631 Val: 0.7631 Test: 0.7631
+INFO:root:current reward: 5.539103984832764
+INFO:root:Epoch 1, Model Loss 499.6298, Actor Loss 699.1780, Critic Loss 15945.2941
+INFO:root:Epoch 2, Model Loss 370.5399, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 3, Model Loss 304.1318, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 5.093328475952148
+INFO:root:Epoch 4, Model Loss 274.7892, Actor Loss 156.4437, Critic Loss 8090.0318
+INFO:root:Epoch 5, Model Loss 255.2063, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7606 Val: 0.7606 Test: 0.7606
+INFO:root:Epoch 6, Model Loss 241.1832, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.460395812988281
+INFO:root:Epoch 7, Model Loss 224.5734, Actor Loss 35.8755, Critic Loss 4298.9589
+INFO:root:Epoch 8, Model Loss 218.1145, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 9, Model Loss 213.7117, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.713567733764648
+INFO:root:Epoch 10, Model Loss 209.4453, Actor Loss 18.4194, Critic Loss 5045.4285
+INFO:root:Metric: accuracy Train: 0.7649 Val: 0.7649 Test: 0.7649
+INFO:root:Epoch 11, Model Loss 204.0914, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 12, Model Loss 199.7964, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.636102676391602
+INFO:root:Epoch 13, Model Loss 197.7767, Actor Loss 8.8213, Critic Loss 3611.8160
+INFO:root:Epoch 14, Model Loss 193.9966, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 15, Model Loss 192.7260, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7691 Val: 0.7691 Test: 0.7691
+INFO:root:current reward: 4.416128158569336
+INFO:root:Epoch 16, Model Loss 192.6264, Actor Loss 5.7957, Critic Loss 3011.1534
+INFO:root:Epoch 17, Model Loss 189.2185, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 18, Model Loss 187.1430, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.396116256713867
+INFO:root:Epoch 19, Model Loss 185.1654, Actor Loss 5.1307, Critic Loss 3812.1500
+INFO:root:Epoch 20, Model Loss 184.2329, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7665 Val: 0.7665 Test: 0.7665
+INFO:root:Epoch 21, Model Loss 180.5566, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.286159515380859
+INFO:root:Epoch 22, Model Loss 179.6912, Actor Loss 2.9866, Critic Loss 1987.9872
+INFO:root:Epoch 23, Model Loss 179.2138, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 24, Model Loss 177.0041, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.193487167358398
+INFO:root:Epoch 25, Model Loss 176.6091, Actor Loss 2.4949, Critic Loss 1840.6615
+INFO:root:Metric: accuracy Train: 0.7616 Val: 0.7616 Test: 0.7616
+INFO:root:Epoch 26, Model Loss 174.1390, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 27, Model Loss 174.5565, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.276407718658447
+INFO:root:Epoch 28, Model Loss 174.6044, Actor Loss 2.0465, Critic Loss 1698.8954
+INFO:root:Epoch 29, Model Loss 171.6952, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 30, Model Loss 171.2152, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7623 Val: 0.7623 Test: 0.7623
+INFO:root:reward curve: [tensor(5.5391), tensor(5.0933), tensor(4.4604), tensor(4.7136), tensor(4.6361), tensor(4.4161), tensor(4.3961), tensor(4.2862), tensor(4.1935), tensor(4.2764)]
+INFO:root:FinishedTraining!
+INFO:root:Dataset: DD
+INFO:root:reg_lambda: 0.0
+INFO:root:drop_ratio: 0.0
+INFO:root:BestEpoch: 2
+INFO:root:BestTrainScore: 0.7691148775894538
+INFO:root:BestValidationScore: 0.7691148775894538
+INFO:root:FinalTestScore: 0.7691148775894538
+INFO:root:Running tu......
+INFO:root:Using Device: cuda:3
+INFO:root:Seed: 2025
+INFO:root:Namespace(actor_view_lr=0.001, batch_size=128, config='config.yaml', critic_view_lr=0.001, dataset='DD', downstream_classifier='SVC', drop_ratio=0.0, emb_dim=32, epochs=30, eval_interval=5, mlp_edge_model_dim=128, model_lr=0.001, num_gc_layers=3, pooling_type='layerwise', reg_lambda=0.0, seed=2025)
+INFO:root:n_features: 191
+INFO:root:Before training Embedding Eval Scores: Train: 0.7615 Val: 0.7615 Test: 0.7615
+INFO:root:current reward: 5.539805889129639
+INFO:root:Epoch 1, Model Loss 516.2894, Actor Loss 866.2568, Critic Loss 17020.7320
+INFO:root:Epoch 2, Model Loss 398.9084, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 3, Model Loss 326.6417, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.582602024078369
+INFO:root:Epoch 4, Model Loss 284.3312, Actor Loss 246.6161, Critic Loss 7613.0443
+INFO:root:Epoch 5, Model Loss 259.7707, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7623 Val: 0.7623 Test: 0.7623
+INFO:root:Epoch 6, Model Loss 243.5332, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.264333724975586
+INFO:root:Epoch 7, Model Loss 230.0646, Actor Loss 88.6353, Critic Loss 5174.3749
+INFO:root:Epoch 8, Model Loss 219.0059, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 9, Model Loss 211.0862, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.164677619934082
+INFO:root:Epoch 10, Model Loss 203.1782, Actor Loss 36.8206, Critic Loss 3763.7293
+INFO:root:Metric: accuracy Train: 0.7742 Val: 0.7742 Test: 0.7742
+INFO:root:Epoch 11, Model Loss 200.3503, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 12, Model Loss 197.5714, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.098455429077148
+INFO:root:Epoch 13, Model Loss 193.1818, Actor Loss 19.4681, Critic Loss 3273.5553
+INFO:root:Epoch 14, Model Loss 189.1706, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 15, Model Loss 187.6969, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7666 Val: 0.7666 Test: 0.7666
+INFO:root:current reward: 4.107736587524414
+INFO:root:Epoch 16, Model Loss 185.9573, Actor Loss 11.2794, Critic Loss 2587.9351
+INFO:root:Epoch 17, Model Loss 186.7011, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 18, Model Loss 180.6370, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.071235656738281
+INFO:root:Epoch 19, Model Loss 180.2195, Actor Loss 7.4547, Critic Loss 2388.6608
+INFO:root:Epoch 20, Model Loss 179.8699, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7581 Val: 0.7581 Test: 0.7581
+INFO:root:Epoch 21, Model Loss 177.6904, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.341195106506348
+INFO:root:Epoch 22, Model Loss 176.0736, Actor Loss 5.4958, Critic Loss 2365.4132
+INFO:root:Epoch 23, Model Loss 176.1299, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 24, Model Loss 175.2964, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.208358287811279
+INFO:root:Epoch 25, Model Loss 174.6356, Actor Loss 4.2344, Critic Loss 2099.6693
+INFO:root:Metric: accuracy Train: 0.7624 Val: 0.7624 Test: 0.7624
+INFO:root:Epoch 26, Model Loss 173.3115, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 27, Model Loss 173.5528, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.384480953216553
+INFO:root:Epoch 28, Model Loss 172.5133, Actor Loss 3.5617, Critic Loss 2003.9139
+INFO:root:Epoch 29, Model Loss 173.8873, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 30, Model Loss 171.5239, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7607 Val: 0.7607 Test: 0.7607
+INFO:root:reward curve: [tensor(5.5398), tensor(4.5826), tensor(4.2643), tensor(4.1647), tensor(4.0985), tensor(4.1077), tensor(4.0712), tensor(4.3412), tensor(4.2084), tensor(4.3845)]
+INFO:root:FinishedTraining!
+INFO:root:Dataset: DD
+INFO:root:reg_lambda: 0.0
+INFO:root:drop_ratio: 0.0
+INFO:root:BestEpoch: 1
+INFO:root:BestTrainScore: 0.7741634072142547
+INFO:root:BestValidationScore: 0.7741634072142547
+INFO:root:FinalTestScore: 0.7741634072142547
+INFO:root:Running tu......
+INFO:root:Using Device: cuda:3
+INFO:root:Seed: 2026
+INFO:root:Namespace(actor_view_lr=0.001, batch_size=128, config='config.yaml', critic_view_lr=0.001, dataset='DD', downstream_classifier='SVC', drop_ratio=0.0, emb_dim=32, epochs=30, eval_interval=5, mlp_edge_model_dim=128, model_lr=0.001, num_gc_layers=3, pooling_type='layerwise', reg_lambda=0.0, seed=2026)
+INFO:root:n_features: 191
+INFO:root:Before training Embedding Eval Scores: Train: 0.7530 Val: 0.7530 Test: 0.7530
+INFO:root:current reward: 5.522462844848633
+INFO:root:Epoch 1, Model Loss 438.1033, Actor Loss 885.2433, Critic Loss 17333.0323
+INFO:root:Epoch 2, Model Loss 325.4695, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 3, Model Loss 289.0730, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.807219982147217
+INFO:root:Epoch 4, Model Loss 266.2408, Actor Loss 269.9353, Critic Loss 8609.8857
+INFO:root:Epoch 5, Model Loss 247.8970, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7716 Val: 0.7716 Test: 0.7716
+INFO:root:Epoch 6, Model Loss 232.6920, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.08865213394165
+INFO:root:Epoch 7, Model Loss 218.6113, Actor Loss 74.6656, Critic Loss 3812.1957
+INFO:root:Epoch 8, Model Loss 210.0904, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 9, Model Loss 209.7309, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.18393611907959
+INFO:root:Epoch 10, Model Loss 200.7271, Actor Loss 34.9488, Critic Loss 3026.3802
+INFO:root:Metric: accuracy Train: 0.7734 Val: 0.7734 Test: 0.7734
+INFO:root:Epoch 11, Model Loss 198.2277, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 12, Model Loss 194.6080, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 3.9573798179626465
+INFO:root:Epoch 13, Model Loss 191.1976, Actor Loss 21.5557, Critic Loss 2732.0740
+INFO:root:Epoch 14, Model Loss 185.1867, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 15, Model Loss 184.2560, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7716 Val: 0.7716 Test: 0.7716
+INFO:root:current reward: 4.189777374267578
+INFO:root:Epoch 16, Model Loss 184.1384, Actor Loss 14.8677, Critic Loss 2551.9188
+INFO:root:Epoch 17, Model Loss 183.6254, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 18, Model Loss 182.3837, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.445399284362793
+INFO:root:Epoch 19, Model Loss 181.3613, Actor Loss 10.6804, Critic Loss 2381.8037
+INFO:root:Epoch 20, Model Loss 178.9177, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7624 Val: 0.7624 Test: 0.7624
+INFO:root:Epoch 21, Model Loss 176.8907, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.074087619781494
+INFO:root:Epoch 22, Model Loss 175.4310, Actor Loss 8.0506, Critic Loss 1964.3949
+INFO:root:Epoch 23, Model Loss 175.2823, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 24, Model Loss 174.4036, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.126556396484375
+INFO:root:Epoch 25, Model Loss 173.2542, Actor Loss 5.7184, Critic Loss 1624.8131
+INFO:root:Metric: accuracy Train: 0.7673 Val: 0.7673 Test: 0.7673
+INFO:root:Epoch 26, Model Loss 172.3157, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 27, Model Loss 171.6338, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.298227310180664
+INFO:root:Epoch 28, Model Loss 171.1444, Actor Loss 4.8720, Critic Loss 1704.1729
+INFO:root:Epoch 29, Model Loss 169.3626, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 30, Model Loss 169.9715, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7624 Val: 0.7624 Test: 0.7624
+INFO:root:reward curve: [tensor(5.5225), tensor(4.8072), tensor(4.0887), tensor(4.1839), tensor(3.9574), tensor(4.1898), tensor(4.4454), tensor(4.0741), tensor(4.1266), tensor(4.2982)]
+INFO:root:FinishedTraining!
+INFO:root:Dataset: DD
+INFO:root:reg_lambda: 0.0
+INFO:root:drop_ratio: 0.0
+INFO:root:BestEpoch: 1
+INFO:root:BestTrainScore: 0.7733594089526293
+INFO:root:BestValidationScore: 0.7733594089526293
+INFO:root:FinalTestScore: 0.7733594089526293
+INFO:root:Running tu......
+INFO:root:Using Device: cuda:3
+INFO:root:Seed: 2027
+INFO:root:Namespace(actor_view_lr=0.001, batch_size=128, config='config.yaml', critic_view_lr=0.001, dataset='DD', downstream_classifier='SVC', drop_ratio=0.0, emb_dim=32, epochs=30, eval_interval=5, mlp_edge_model_dim=128, model_lr=0.001, num_gc_layers=3, pooling_type='layerwise', reg_lambda=0.0, seed=2027)
+INFO:root:n_features: 191
+INFO:root:Before training Embedding Eval Scores: Train: 0.7589 Val: 0.7589 Test: 0.7589
+INFO:root:current reward: 5.537221431732178
+INFO:root:Epoch 1, Model Loss 489.5890, Actor Loss 1147.8777, Critic Loss 20756.0867
+INFO:root:Epoch 2, Model Loss 396.8977, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 3, Model Loss 326.9088, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.949799537658691
+INFO:root:Epoch 4, Model Loss 286.7687, Actor Loss 368.4123, Critic Loss 10566.4477
+INFO:root:Epoch 5, Model Loss 266.3162, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7513 Val: 0.7513 Test: 0.7513
+INFO:root:Epoch 6, Model Loss 250.2346, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.231250762939453
+INFO:root:Epoch 7, Model Loss 236.6856, Actor Loss 121.5377, Critic Loss 5274.1541
+INFO:root:Epoch 8, Model Loss 223.3200, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 9, Model Loss 215.1863, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.017518043518066
+INFO:root:Epoch 10, Model Loss 206.5102, Actor Loss 49.7166, Critic Loss 3354.2622
+INFO:root:Metric: accuracy Train: 0.7556 Val: 0.7556 Test: 0.7556
+INFO:root:Epoch 11, Model Loss 200.3320, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 12, Model Loss 196.8010, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 3.7653727531433105
+INFO:root:Epoch 13, Model Loss 193.1123, Actor Loss 28.8158, Critic Loss 2772.7556
+INFO:root:Epoch 14, Model Loss 189.7323, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 15, Model Loss 187.7404, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7505 Val: 0.7505 Test: 0.7505
+INFO:root:current reward: 4.010524749755859
+INFO:root:Epoch 16, Model Loss 186.4490, Actor Loss 18.0305, Critic Loss 2297.3507
+INFO:root:Epoch 17, Model Loss 185.6645, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 18, Model Loss 183.0094, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 3.9295454025268555
+INFO:root:Epoch 19, Model Loss 183.5410, Actor Loss 14.5435, Critic Loss 2532.6831
+INFO:root:Epoch 20, Model Loss 182.8415, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7605 Val: 0.7605 Test: 0.7605
+INFO:root:Epoch 21, Model Loss 180.6139, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 3.952881336212158
+INFO:root:Epoch 22, Model Loss 179.9145, Actor Loss 10.5247, Critic Loss 2254.6508
+INFO:root:Epoch 23, Model Loss 179.3424, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 24, Model Loss 177.2814, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.186671257019043
+INFO:root:Epoch 25, Model Loss 174.5643, Actor Loss 7.7454, Critic Loss 1774.8125
+INFO:root:Metric: accuracy Train: 0.7453 Val: 0.7453 Test: 0.7453
+INFO:root:Epoch 26, Model Loss 174.8441, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 27, Model Loss 174.9036, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.194250583648682
+INFO:root:Epoch 28, Model Loss 175.8121, Actor Loss 6.3149, Critic Loss 1720.2135
+INFO:root:Epoch 29, Model Loss 173.0021, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 30, Model Loss 172.3033, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7615 Val: 0.7615 Test: 0.7615
+INFO:root:reward curve: [tensor(5.5372), tensor(4.9498), tensor(4.2313), tensor(4.0175), tensor(3.7654), tensor(4.0105), tensor(3.9295), tensor(3.9529), tensor(4.1867), tensor(4.1943)]
+INFO:root:FinishedTraining!
+INFO:root:Dataset: DD
+INFO:root:reg_lambda: 0.0
+INFO:root:drop_ratio: 0.0
+INFO:root:BestEpoch: 5
+INFO:root:BestTrainScore: 0.7615457047660437
+INFO:root:BestValidationScore: 0.7615457047660437
+INFO:root:FinalTestScore: 0.7615457047660437
+INFO:root:Running tu......
+INFO:root:Using Device: cuda:3
+INFO:root:Seed: 2028
+INFO:root:Namespace(actor_view_lr=0.001, batch_size=128, config='config.yaml', critic_view_lr=0.001, dataset='DD', downstream_classifier='SVC', drop_ratio=0.0, emb_dim=32, epochs=30, eval_interval=5, mlp_edge_model_dim=128, model_lr=0.001, num_gc_layers=3, pooling_type='layerwise', reg_lambda=0.0, seed=2028)
+INFO:root:n_features: 191
+INFO:root:Before training Embedding Eval Scores: Train: 0.7606 Val: 0.7606 Test: 0.7606
+INFO:root:current reward: 5.535717010498047
+INFO:root:Epoch 1, Model Loss 477.7724, Actor Loss 921.7911, Critic Loss 16753.9691
+INFO:root:Epoch 2, Model Loss 347.9352, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 3, Model Loss 300.5146, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.798192024230957
+INFO:root:Epoch 4, Model Loss 260.1098, Actor Loss 245.6808, Critic Loss 8266.5061
+INFO:root:Epoch 5, Model Loss 240.5952, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7784 Val: 0.7784 Test: 0.7784
+INFO:root:Epoch 6, Model Loss 230.8340, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.126181602478027
+INFO:root:Epoch 7, Model Loss 220.8090, Actor Loss 67.7170, Critic Loss 3805.7365
+INFO:root:Epoch 8, Model Loss 213.6515, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 9, Model Loss 208.3101, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.081029891967773
+INFO:root:Epoch 10, Model Loss 208.2544, Actor Loss 35.2261, Critic Loss 3224.4266
+INFO:root:Metric: accuracy Train: 0.7819 Val: 0.7819 Test: 0.7819
+INFO:root:Epoch 11, Model Loss 202.3131, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 12, Model Loss 200.3003, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.043497085571289
+INFO:root:Epoch 13, Model Loss 195.6543, Actor Loss 21.4363, Critic Loss 2817.6717
+INFO:root:Epoch 14, Model Loss 192.3652, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 15, Model Loss 190.6632, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7793 Val: 0.7793 Test: 0.7793
+INFO:root:current reward: 4.199060440063477
+INFO:root:Epoch 16, Model Loss 189.9520, Actor Loss 15.4995, Critic Loss 2564.5985
+INFO:root:Epoch 17, Model Loss 190.2105, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 18, Model Loss 188.7303, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.402132987976074
+INFO:root:Epoch 19, Model Loss 184.1556, Actor Loss 12.0601, Critic Loss 2519.5667
+INFO:root:Epoch 20, Model Loss 182.6294, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7717 Val: 0.7717 Test: 0.7717
+INFO:root:Epoch 21, Model Loss 180.3493, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.362461566925049
+INFO:root:Epoch 22, Model Loss 180.7659, Actor Loss 9.0959, Critic Loss 2137.6912
+INFO:root:Epoch 23, Model Loss 180.4702, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 24, Model Loss 178.6957, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.523534774780273
+INFO:root:Epoch 25, Model Loss 175.9983, Actor Loss 7.5989, Critic Loss 2058.8223
+INFO:root:Metric: accuracy Train: 0.7683 Val: 0.7683 Test: 0.7683
+INFO:root:Epoch 26, Model Loss 176.4560, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 27, Model Loss 174.0967, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:current reward: 4.532402992248535
+INFO:root:Epoch 28, Model Loss 175.5912, Actor Loss 5.9542, Critic Loss 1736.3718
+INFO:root:Epoch 29, Model Loss 172.7486, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Epoch 30, Model Loss 173.8084, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:Metric: accuracy Train: 0.7750 Val: 0.7750 Test: 0.7750
+INFO:root:reward curve: [tensor(5.5357), tensor(4.7982), tensor(4.1262), tensor(4.0810), tensor(4.0435), tensor(4.1991), tensor(4.4021), tensor(4.3625), tensor(4.5235), tensor(4.5324)]
+INFO:root:FinishedTraining!
+INFO:root:Dataset: DD
+INFO:root:reg_lambda: 0.0
+INFO:root:drop_ratio: 0.0
+INFO:root:BestEpoch: 1
+INFO:root:BestTrainScore: 0.7818557149065624
+INFO:root:BestValidationScore: 0.7818557149065624
+INFO:root:FinalTestScore: 0.7818557149065624
+INFO:root:Mean Testscore: 77.20±0.67

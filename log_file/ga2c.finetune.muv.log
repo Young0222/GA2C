@@ -1,0 +1,916 @@
+INFO:root:Using Device: cuda:2
+INFO:root:Seed: 2024
+INFO:root:Namespace(JK='last', batch_size=32, dataset='muv', decay=0.0, device=0, dropout_ratio=0.5, emb_dim=300, epochs=100, eval_train=1, gnn_type='gin', graph_pooling='mean', input_model_file='./models_ga2c/chem/1024pretrain_ga2c_seed_2024_reg_0.0_epoch_10.pth', lr=0.001, lr_scale=1, num_layer=3, num_workers=4, seed=2024, split='scaffold')
+INFO:root:MoleculeDataset(93087)
+INFO:root:scaffold
+INFO:root:Data(edge_attr=[30, 2], id=[1], y=[17], x=[15, 2], edge_index=[2, 30])
+INFO:root:====epoch 1 SupervisedLoss 1.5139828881726405
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.6646693010909368 EvalVal: 0.6188019984544774 EvalTestt: 0.6005540732476364
+INFO:root:====epoch 2 SupervisedLoss 0.4534396019915234
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.6454371420363606 EvalVal: 0.6449092016253598 EvalTestt: 0.646384124498649
+INFO:root:====epoch 3 SupervisedLoss 0.4506925367691132
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7177383277189476 EvalVal: 0.6803288988563876 EvalTestt: 0.6787941707186023
+INFO:root:====epoch 4 SupervisedLoss 0.44905699498268764
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7410288882863967 EvalVal: 0.7447307387734368 EvalTestt: 0.7058885491854934
+INFO:root:====epoch 5 SupervisedLoss 0.44011415983783064
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7328850209027951 EvalVal: 0.6816283440601555 EvalTestt: 0.7249662921625128
+INFO:root:====epoch 6 SupervisedLoss 0.4359644034974851
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7221543342579055 EvalVal: 0.7763044872834346 EvalTestt: 0.6815920734933082
+INFO:root:====epoch 7 SupervisedLoss 0.44187491101616644
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7540463544136695 EvalVal: 0.7093403857038785 EvalTestt: 0.6864432827743233
+INFO:root:====epoch 8 SupervisedLoss 0.4342298986931678
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7530653406897129 EvalVal: 0.7366570532038546 EvalTestt: 0.6679965786142212
+INFO:root:====epoch 9 SupervisedLoss 0.43245975484357946
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.771829394498038 EvalVal: 0.7617796581344016 EvalTestt: 0.6996322510542444
+INFO:root:====epoch 10 SupervisedLoss 0.4223236214276584
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7857687291013874 EvalVal: 0.7566037522001395 EvalTestt: 0.7235919294616023
+INFO:root:====epoch 11 SupervisedLoss 0.42634363647003354
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7911019158293107 EvalVal: 0.7333767945307672 EvalTestt: 0.7150039002850228
+INFO:root:====epoch 12 SupervisedLoss 0.4263798769717411
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7939721667097195 EvalVal: 0.7321552970167319 EvalTestt: 0.7227711142565009
+INFO:root:====epoch 13 SupervisedLoss 0.41849984218389735
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7871258988391604 EvalVal: 0.753503242742481 EvalTestt: 0.7007052575133476
+INFO:root:====epoch 14 SupervisedLoss 0.4185422700426109
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7977218877288433 EvalVal: 0.7474234275194621 EvalTestt: 0.728299452607952
+INFO:root:====epoch 15 SupervisedLoss 0.4118089272536567
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7806305993744919 EvalVal: 0.7396351700892537 EvalTestt: 0.724262086560236
+INFO:root:====epoch 16 SupervisedLoss 0.410580832498935
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8227229082453149 EvalVal: 0.7496867352436254 EvalTestt: 0.7245272361900426
+INFO:root:====epoch 17 SupervisedLoss 0.40810828529366727
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8023767646477606 EvalVal: 0.7652645347520718 EvalTestt: 0.7028209888770395
+INFO:root:====epoch 18 SupervisedLoss 0.41345796720972117
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8218517292559446 EvalVal: 0.7344903561493806 EvalTestt: 0.7205577086839398
+INFO:root:====epoch 19 SupervisedLoss 0.40746007349887603
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8227897015979595 EvalVal: 0.7578794881975602 EvalTestt: 0.747047196344727
+INFO:root:====epoch 20 SupervisedLoss 0.4031096514080626
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8254868430390809 EvalVal: 0.7405393413531555 EvalTestt: 0.7286581212357692
+INFO:root:====epoch 21 SupervisedLoss 0.40510843487362247
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8332416118757178 EvalVal: 0.7614185985781975 EvalTestt: 0.7536260991177313
+INFO:root:====epoch 22 SupervisedLoss 0.40350452309625967
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8332303031644744 EvalVal: 0.7654529169191137 EvalTestt: 0.7424184785310707
+INFO:root:====epoch 23 SupervisedLoss 0.40048685678874
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8361247761737582 EvalVal: 0.7652792037971283 EvalTestt: 0.7537706273325614
+INFO:root:====epoch 24 SupervisedLoss 0.3940006132834973
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.84318997351314 EvalVal: 0.7403492160958692 EvalTestt: 0.7603893267958524
+INFO:root:====epoch 25 SupervisedLoss 0.39315882027900295
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8411755343026394 EvalVal: 0.7618292340512487 EvalTestt: 0.764543343744207
+INFO:root:====epoch 26 SupervisedLoss 0.3941972466620644
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8391939644324594 EvalVal: 0.7444315390857792 EvalTestt: 0.7476653998009668
+INFO:root:====epoch 27 SupervisedLoss 0.3932378528397597
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8494029603375637 EvalVal: 0.7586627550491643 EvalTestt: 0.7464173971015463
+INFO:root:====epoch 28 SupervisedLoss 0.3903525984107018
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8403988684933514 EvalVal: 0.7352335315767277 EvalTestt: 0.76094386334687
+INFO:root:====epoch 29 SupervisedLoss 0.3833320603249752
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.858818548221329 EvalVal: 0.757024875688608 EvalTestt: 0.7317996072785794
+INFO:root:====epoch 30 SupervisedLoss 0.3813415984353098
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.853618231342562 EvalVal: 0.7673980288145866 EvalTestt: 0.7464735773273375
+INFO:root:====epoch 31 SupervisedLoss 0.3821933419161606
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8604936013272432 EvalVal: 0.7682175906396703 EvalTestt: 0.7388075872016635
+INFO:root:====epoch 32 SupervisedLoss 0.38155816142097004
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8659978393749524 EvalVal: 0.7687280010227643 EvalTestt: 0.7706084761035751
+INFO:root:====epoch 33 SupervisedLoss 0.3848570881559371
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8605923627713093 EvalVal: 0.7713638571317176 EvalTestt: 0.7661951061872903
+INFO:root:====epoch 34 SupervisedLoss 0.3767766807768464
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8689292072740857 EvalVal: 0.7648638539097504 EvalTestt: 0.7633825441061788
+INFO:root:====epoch 35 SupervisedLoss 0.3716704707610461
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8687486032773883 EvalVal: 0.7509544637687089 EvalTestt: 0.755342017229924
+INFO:root:====epoch 36 SupervisedLoss 0.37893619195277783
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8698750432989192 EvalVal: 0.7664279479786789 EvalTestt: 0.7718616505102901
+INFO:root:====epoch 37 SupervisedLoss 0.3809964272217377
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8693816801270683 EvalVal: 0.7582460750146784 EvalTestt: 0.7635618798502432
+INFO:root:====epoch 38 SupervisedLoss 0.3718766228007235
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8766171995963654 EvalVal: 0.7556926722608706 EvalTestt: 0.7466779971881539
+INFO:root:====epoch 39 SupervisedLoss 0.3715831920786764
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8625460328478181 EvalVal: 0.7535064874613779 EvalTestt: 0.7221483935510864
+INFO:root:====epoch 40 SupervisedLoss 0.3745376111248821
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8798861152521106 EvalVal: 0.7518463456904229 EvalTestt: 0.7747363475460239
+INFO:root:====epoch 41 SupervisedLoss 0.36779812393067585
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8843430644593966 EvalVal: 0.7697131042134734 EvalTestt: 0.7652202703167779
+INFO:root:====epoch 42 SupervisedLoss 0.3722152089724471
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8858128495424367 EvalVal: 0.7576168412730443 EvalTestt: 0.7883306106365219
+INFO:root:====epoch 43 SupervisedLoss 0.37262388477604674
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8851880438850596 EvalVal: 0.7663998955719916 EvalTestt: 0.7632457223551916
+INFO:root:====epoch 44 SupervisedLoss 0.36982127483426636
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8805161880013465 EvalVal: 0.771030042305483 EvalTestt: 0.7334682049543703
+INFO:root:====epoch 45 SupervisedLoss 0.3738340588498552
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8882565366400338 EvalVal: 0.7808326387645325 EvalTestt: 0.7683235446507741
+INFO:root:====epoch 46 SupervisedLoss 0.36321435385759915
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.886157723547351 EvalVal: 0.7675787673353399 EvalTestt: 0.7895977490985915
+INFO:root:====epoch 47 SupervisedLoss 0.366361729485049
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.888748290739507 EvalVal: 0.7738004083887758 EvalTestt: 0.7725516261137814
+INFO:root:====epoch 48 SupervisedLoss 0.3613590533560852
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.88600688556379 EvalVal: 0.7720011498767199 EvalTestt: 0.7684567473216449
+INFO:root:====epoch 49 SupervisedLoss 0.36481258766171976
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8894304402396 EvalVal: 0.778304791438773 EvalTestt: 0.7710954784004757
+INFO:root:====epoch 50 SupervisedLoss 0.3628016334647165
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8984195065636291 EvalVal: 0.7741210352575715 EvalTestt: 0.7739465280348712
+INFO:root:====epoch 51 SupervisedLoss 0.3608117616661656
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.894720775278965 EvalVal: 0.7712866726696459 EvalTestt: 0.7714356520227484
+INFO:root:====epoch 52 SupervisedLoss 0.36428645923269565
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8933135141023233 EvalVal: 0.7683594424675247 EvalTestt: 0.7818031541732621
+INFO:root:====epoch 53 SupervisedLoss 0.367138002643874
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9034320895680906 EvalVal: 0.7677356950361123 EvalTestt: 0.7888424065599653
+INFO:root:====epoch 54 SupervisedLoss 0.35790244365724966
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8992803351871369 EvalVal: 0.7710726569196412 EvalTestt: 0.7784935248962042
+INFO:root:====epoch 55 SupervisedLoss 0.35943063710661094
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.900393130115466 EvalVal: 0.7748623528378825 EvalTestt: 0.7789085323768025
+INFO:root:====epoch 56 SupervisedLoss 0.3535158810742257
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9064676921892275 EvalVal: 0.7778078594641579 EvalTestt: 0.7637201083183088
+INFO:root:====epoch 57 SupervisedLoss 0.3545318348840544
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8994596723178264 EvalVal: 0.7853572629331632 EvalTestt: 0.8022827116609831
+INFO:root:====epoch 58 SupervisedLoss 0.3488645189974804
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9077303606085895 EvalVal: 0.7883350674069559 EvalTestt: 0.7877983100276046
+INFO:root:====epoch 59 SupervisedLoss 0.3568086279316778
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.900191950133166 EvalVal: 0.7679600289413717 EvalTestt: 0.7999634915341003
+INFO:root:====epoch 60 SupervisedLoss 0.3525189427832257
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.902911805227737 EvalVal: 0.7773231863843367 EvalTestt: 0.7902352585724884
+INFO:root:====epoch 61 SupervisedLoss 0.343555289241004
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9085904020572949 EvalVal: 0.7747538117784298 EvalTestt: 0.7924310809362163
+INFO:root:====epoch 62 SupervisedLoss 0.3532793295250851
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9011675975024359 EvalVal: 0.7607248259284061 EvalTestt: 0.773263449020331
+INFO:root:====epoch 63 SupervisedLoss 0.3473015043221481
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9133443773222696 EvalVal: 0.7671547785772361 EvalTestt: 0.7970148820989614
+INFO:root:====epoch 64 SupervisedLoss 0.34996672530099354
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9032676844450173 EvalVal: 0.7660822152138989 EvalTestt: 0.7899702124758716
+INFO:root:====epoch 65 SupervisedLoss 0.3500853889935198
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9073263614912355 EvalVal: 0.7653327344084107 EvalTestt: 0.7874934619469249
+INFO:root:====epoch 66 SupervisedLoss 0.3422657334369188
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9118272280433769 EvalVal: 0.7740548970317106 EvalTestt: 0.7918141580392674
+INFO:root:====epoch 67 SupervisedLoss 0.34902708466153726
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9038199572776442 EvalVal: 0.7662255667173328 EvalTestt: 0.7788438884880641
+INFO:root:====epoch 68 SupervisedLoss 0.3416521958496263
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9076321295494313 EvalVal: 0.7702921803059857 EvalTestt: 0.7838270710692073
+INFO:root:====epoch 69 SupervisedLoss 0.34686123198541097
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9044586761761361 EvalVal: 0.7571502667758555 EvalTestt: 0.7736801128583575
+INFO:root:====epoch 70 SupervisedLoss 0.3397671562428148
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9082983975008938 EvalVal: 0.7606303661649986 EvalTestt: 0.7705431921035737
+INFO:root:====epoch 71 SupervisedLoss 0.33897472322252914
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9163303925190648 EvalVal: 0.7564799482277127 EvalTestt: 0.7723507268966212
+INFO:root:====epoch 72 SupervisedLoss 0.3422846284684608
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.918052772149852 EvalVal: 0.771709512757522 EvalTestt: 0.7840222672146289
+INFO:root:====epoch 73 SupervisedLoss 0.3376813192035996
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9131756054878853 EvalVal: 0.76608428328986 EvalTestt: 0.7804065033664884
+INFO:root:====epoch 74 SupervisedLoss 0.33897331926432794
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9071571458717674 EvalVal: 0.7555587405903129 EvalTestt: 0.7524663399234046
+INFO:root:====epoch 75 SupervisedLoss 0.33548070185749634
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9142797695299616 EvalVal: 0.7784630776098667 EvalTestt: 0.7928016137068571
+INFO:root:====epoch 76 SupervisedLoss 0.33881961485990314
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.919121071543715 EvalVal: 0.7769675389853183 EvalTestt: 0.7866676043829812
+INFO:root:====epoch 77 SupervisedLoss 0.33599454593892436
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9224347493696636 EvalVal: 0.770870379214345 EvalTestt: 0.7938107193363089
+INFO:root:====epoch 78 SupervisedLoss 0.3359443688111099
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.916012686625878 EvalVal: 0.7500463182206869 EvalTestt: 0.7822656213099308
+INFO:root:====epoch 79 SupervisedLoss 0.33900644034650995
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9178768424969613 EvalVal: 0.771302919279627 EvalTestt: 0.7721428972916402
+INFO:root:====epoch 80 SupervisedLoss 0.3372623953311727
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9132259972954541 EvalVal: 0.7657424098732062 EvalTestt: 0.7778616690682933
+INFO:root:====epoch 81 SupervisedLoss 0.3361311788404905
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9170660168518617 EvalVal: 0.7579306052794383 EvalTestt: 0.7745362182392983
+INFO:root:====epoch 82 SupervisedLoss 0.32882324518456213
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9224911230219862 EvalVal: 0.7738701674854976 EvalTestt: 0.7798017031491383
+INFO:root:====epoch 83 SupervisedLoss 0.3300084346351271
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9186969974550804 EvalVal: 0.7695238143571622 EvalTestt: 0.766175068225111
+INFO:root:====epoch 84 SupervisedLoss 0.3345102677834084
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9159780628499691 EvalVal: 0.7419722629301382 EvalTestt: 0.7531354487566924
+INFO:root:====epoch 85 SupervisedLoss 0.3287194355386731
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9264042173785473 EvalVal: 0.7552966205799124 EvalTestt: 0.7663307944520049
+INFO:root:====epoch 86 SupervisedLoss 0.3239489936908945
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9265209790651385 EvalVal: 0.7317459035109358 EvalTestt: 0.7669623633192288
+INFO:root:====epoch 87 SupervisedLoss 0.3244760099109658
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.92183860278596 EvalVal: 0.7496095699704107 EvalTestt: 0.7747509349823382
+INFO:root:====epoch 88 SupervisedLoss 0.3295514662114083
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9216724339364412 EvalVal: 0.7539427700901252 EvalTestt: 0.7737931044596311
+INFO:root:====epoch 89 SupervisedLoss 0.3278647603142079
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9277311407398587 EvalVal: 0.7768610250335963 EvalTestt: 0.7745290355851554
+INFO:root:====epoch 90 SupervisedLoss 0.3302920419368158
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9284439677628632 EvalVal: 0.7677202763441028 EvalTestt: 0.7803864007085527
+INFO:root:====epoch 91 SupervisedLoss 0.32670416793189583
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9257878675088561 EvalVal: 0.7592495133097754 EvalTestt: 0.781153980576536
+INFO:root:====epoch 92 SupervisedLoss 0.3290267529323722
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9213985283702301 EvalVal: 0.7648999249158883 EvalTestt: 0.7885413262678895
+INFO:root:====epoch 93 SupervisedLoss 0.31841414377538585
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9261814509704909 EvalVal: 0.7755639084452329 EvalTestt: 0.7803754522216377
+INFO:root:====epoch 94 SupervisedLoss 0.3236715720546788
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9264264875472005 EvalVal: 0.7664315116919176 EvalTestt: 0.7717804093625728
+INFO:root:====epoch 95 SupervisedLoss 0.3225034740994482
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9224605961879033 EvalVal: 0.7473292785948504 EvalTestt: 0.748148610454287
+INFO:root:====epoch 96 SupervisedLoss 0.3283896640144035
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9294305632185982 EvalVal: 0.7669232935840199 EvalTestt: 0.7840143984924048
+INFO:root:====epoch 97 SupervisedLoss 0.32446081871997967
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9269465018172789 EvalVal: 0.748464394430587 EvalTestt: 0.7644572014070696
+INFO:root:====epoch 98 SupervisedLoss 0.3199784750643898
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.935693058897657 EvalVal: 0.7759859332937205 EvalTestt: 0.7739248494391089
+INFO:root:====epoch 99 SupervisedLoss 0.3176906191633713
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9248653389574315 EvalVal: 0.7647125731832327 EvalTestt: 0.7559636419733029
+INFO:root:====epoch 100 SupervisedLoss 0.32196135504881335
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.930187671370547 EvalVal: 0.7691389351962645 EvalTestt: 0.7627650597339011
+INFO:root:FinalTestScore: 0.8022827116609831
+INFO:root:MoleculeDataset(93087)
+INFO:root:scaffold
+INFO:root:Data(edge_attr=[30, 2], id=[1], y=[17], x=[15, 2], edge_index=[2, 30])
+INFO:root:====epoch 1 SupervisedLoss 1.5344216076192974
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.6787666997372133 EvalVal: 0.6373437900493104 EvalTestt: 0.5820139997754767
+INFO:root:====epoch 2 SupervisedLoss 0.45236443481488425
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.6754118375416747 EvalVal: 0.6893289384990618 EvalTestt: 0.6405847719926231
+INFO:root:====epoch 3 SupervisedLoss 0.44491051731089354
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7222904913305765 EvalVal: 0.6817675289506187 EvalTestt: 0.6501203911118711
+INFO:root:====epoch 4 SupervisedLoss 0.43778784728054104
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7269569715577746 EvalVal: 0.6779672075130851 EvalTestt: 0.6276583073038818
+INFO:root:====epoch 5 SupervisedLoss 0.44293646680234616
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7458140276174903 EvalVal: 0.7403964133377228 EvalTestt: 0.6939814674227021
+INFO:root:====epoch 6 SupervisedLoss 0.43631380333748365
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7383469923795455 EvalVal: 0.6933728842704506 EvalTestt: 0.6774985030644901
+INFO:root:====epoch 7 SupervisedLoss 0.4289590569594237
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.774927309623957 EvalVal: 0.7333265390915308 EvalTestt: 0.678396876635661
+INFO:root:====epoch 8 SupervisedLoss 0.4301435429683076
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7826411974758879 EvalVal: 0.710078493778119 EvalTestt: 0.6923366839047546
+INFO:root:====epoch 9 SupervisedLoss 0.42621640459995047
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7336252379351419 EvalVal: 0.7264079936757106 EvalTestt: 0.6740514123339977
+INFO:root:====epoch 10 SupervisedLoss 0.42691580273589796
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7687606328664027 EvalVal: 0.7004800418963637 EvalTestt: 0.748456707868876
+INFO:root:====epoch 11 SupervisedLoss 0.427461376614904
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7814128982849173 EvalVal: 0.7441291589416299 EvalTestt: 0.7445442327743
+INFO:root:====epoch 12 SupervisedLoss 0.4303086534740363
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7876940280200321 EvalVal: 0.7187408166059485 EvalTestt: 0.688758548088753
+INFO:root:====epoch 13 SupervisedLoss 0.42110782525543655
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7921745539509182 EvalVal: 0.7312361224376422 EvalTestt: 0.7131846805274965
+INFO:root:====epoch 14 SupervisedLoss 0.4250392158412099
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7913437900249947 EvalVal: 0.7242670662593477 EvalTestt: 0.7109683214245017
+INFO:root:====epoch 15 SupervisedLoss 0.4201015675118131
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8079097647146262 EvalVal: 0.7486120274654702 EvalTestt: 0.7150453377856523
+INFO:root:====epoch 16 SupervisedLoss 0.4159288331712041
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7947601753229308 EvalVal: 0.718364983101706 EvalTestt: 0.7269316190929084
+INFO:root:====epoch 17 SupervisedLoss 0.41533148170732
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8086380213420059 EvalVal: 0.7537319166951038 EvalTestt: 0.7439445600461703
+INFO:root:====epoch 18 SupervisedLoss 0.4111398604034561
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8085484759268976 EvalVal: 0.7556506711127412 EvalTestt: 0.7250522062869791
+INFO:root:====epoch 19 SupervisedLoss 0.4105854610510986
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8195576367378131 EvalVal: 0.7295328660082213 EvalTestt: 0.7339208926738422
+INFO:root:====epoch 20 SupervisedLoss 0.4111226057718006
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8175252772635299 EvalVal: 0.7363704687577496 EvalTestt: 0.7603006619002753
+INFO:root:====epoch 21 SupervisedLoss 0.4037704877282586
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8252988216582027 EvalVal: 0.7319897551536456 EvalTestt: 0.7528453187834325
+INFO:root:====epoch 22 SupervisedLoss 0.40464775701357436
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8235004337171732 EvalVal: 0.7362140682027317 EvalTestt: 0.7087389827542143
+INFO:root:====epoch 23 SupervisedLoss 0.4016810676994122
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8329913116340697 EvalVal: 0.7407390934995187 EvalTestt: 0.7464840776453779
+INFO:root:====epoch 24 SupervisedLoss 0.40088626015444057
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8398947111964352 EvalVal: 0.7430165255865203 EvalTestt: 0.7660285711288284
+INFO:root:====epoch 25 SupervisedLoss 0.3956053038003552
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8367423325464669 EvalVal: 0.7392215774090807 EvalTestt: 0.7421114886479169
+INFO:root:====epoch 26 SupervisedLoss 0.3954653668956332
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8354444706075806 EvalVal: 0.7399691777959485 EvalTestt: 0.7697528237751109
+INFO:root:====epoch 27 SupervisedLoss 0.39240127348299303
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.822722873087922 EvalVal: 0.7112338618631073 EvalTestt: 0.7732240091653662
+INFO:root:====epoch 28 SupervisedLoss 0.39573407220693885
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8358212901736453 EvalVal: 0.743445256848573 EvalTestt: 0.7491347542169043
+INFO:root:====epoch 29 SupervisedLoss 0.3874154869611661
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8449550516085423 EvalVal: 0.7725745652127859 EvalTestt: 0.7509130218746125
+INFO:root:====epoch 30 SupervisedLoss 0.39246611689870864
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8549430091562559 EvalVal: 0.7496599721785504 EvalTestt: 0.7667439773638602
+INFO:root:====epoch 31 SupervisedLoss 0.3890394806274474
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8583299464123889 EvalVal: 0.7367035040187624 EvalTestt: 0.7530358501666768
+INFO:root:====epoch 32 SupervisedLoss 0.38723444360884995
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8545116211205647 EvalVal: 0.7678024688107 EvalTestt: 0.7608605317252726
+INFO:root:====epoch 33 SupervisedLoss 0.3899772327324626
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.855701789641123 EvalVal: 0.766797832078493 EvalTestt: 0.7439693235333003
+INFO:root:====epoch 34 SupervisedLoss 0.38396854689610044
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8564698732055874 EvalVal: 0.7675795482268486 EvalTestt: 0.7394280865625978
+INFO:root:====epoch 35 SupervisedLoss 0.38433241351695874
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8526451562648699 EvalVal: 0.7753962433788207 EvalTestt: 0.7545026430090735
+INFO:root:====epoch 36 SupervisedLoss 0.382113097734682
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8629409900213302 EvalVal: 0.7771795160119038 EvalTestt: 0.7472993606908545
+INFO:root:====epoch 37 SupervisedLoss 0.38005351498320794
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8620372425497952 EvalVal: 0.7849167009554558 EvalTestt: 0.7518268966558356
+INFO:root:====epoch 38 SupervisedLoss 0.37853240189177034
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8703369463640904 EvalVal: 0.78325642105326 EvalTestt: 0.7394119702546547
+INFO:root:====epoch 39 SupervisedLoss 0.3782432793017282
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8706592075137362 EvalVal: 0.7855249319573175 EvalTestt: 0.7439704086816215
+INFO:root:====epoch 40 SupervisedLoss 0.37619432118354457
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8572154611879096 EvalVal: 0.7535672399281705 EvalTestt: 0.7640156272537342
+INFO:root:====epoch 41 SupervisedLoss 0.3759255456032914
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.87351715218438 EvalVal: 0.7726064698518716 EvalTestt: 0.7749691446243995
+INFO:root:====epoch 42 SupervisedLoss 0.37386023562449905
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8731167907074101 EvalVal: 0.7922644134880552 EvalTestt: 0.769878744005607
+INFO:root:====epoch 43 SupervisedLoss 0.3735029138179648
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8725153806048931 EvalVal: 0.7608478541086741 EvalTestt: 0.7658408791238569
+INFO:root:====epoch 44 SupervisedLoss 0.3709331400216547
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.876592157382293 EvalVal: 0.7684759645574193 EvalTestt: 0.7582529139106744
+INFO:root:====epoch 45 SupervisedLoss 0.3688214193971226
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8880591494542494 EvalVal: 0.7652090996356726 EvalTestt: 0.7590585471303531
+INFO:root:====epoch 46 SupervisedLoss 0.36867641627836323
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8798985564831665 EvalVal: 0.7739992709439145 EvalTestt: 0.7756562152197066
+INFO:root:====epoch 47 SupervisedLoss 0.36950655895127205
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8837923489631158 EvalVal: 0.7771132133319951 EvalTestt: 0.773359050698851
+INFO:root:====epoch 48 SupervisedLoss 0.364044639079338
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8870586434296077 EvalVal: 0.7782178132712374 EvalTestt: 0.7802282764481306
+INFO:root:====epoch 49 SupervisedLoss 0.3661465235170935
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8954537502815361 EvalVal: 0.7744474440693564 EvalTestt: 0.7522420446243445
+INFO:root:====epoch 50 SupervisedLoss 0.36538042065389975
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8865479416427137 EvalVal: 0.7733160134307724 EvalTestt: 0.7738455481834322
+INFO:root:====epoch 51 SupervisedLoss 0.36525095107971195
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8908184449162979 EvalVal: 0.78182802385915 EvalTestt: 0.782903433151754
+INFO:root:====epoch 52 SupervisedLoss 0.36962931389989695
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8875655342294886 EvalVal: 0.7516794209850247 EvalTestt: 0.7841361705765953
+INFO:root:====epoch 53 SupervisedLoss 0.359248713773606
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.893800735150701 EvalVal: 0.7691823876237447 EvalTestt: 0.7870995216831879
+INFO:root:====epoch 54 SupervisedLoss 0.364876852299253
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8990669322564133 EvalVal: 0.7581413501854196 EvalTestt: 0.7726892173350307
+INFO:root:====epoch 55 SupervisedLoss 0.35896474161602704
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8955049095541273 EvalVal: 0.7816817857771283 EvalTestt: 0.7837057181931031
+INFO:root:====epoch 56 SupervisedLoss 0.360023905175319
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8910910185549619 EvalVal: 0.7453275278742605 EvalTestt: 0.7846461093635535
+INFO:root:====epoch 57 SupervisedLoss 0.3531979397139489
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9003963530437875 EvalVal: 0.7636797418870567 EvalTestt: 0.7775807583716824
+INFO:root:====epoch 58 SupervisedLoss 0.3589311481207242
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9017243728878659 EvalVal: 0.7696091776363939 EvalTestt: 0.7509557451705432
+INFO:root:====epoch 59 SupervisedLoss 0.35284704726199456
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9105757548558878 EvalVal: 0.7862088751776217 EvalTestt: 0.7769313499505676
+INFO:root:====epoch 60 SupervisedLoss 0.3534347490405268
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9056268514146849 EvalVal: 0.7672390786885901 EvalTestt: 0.7794585231470041
+INFO:root:====epoch 61 SupervisedLoss 0.3464799234787896
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9105949817063949 EvalVal: 0.7775708753213617 EvalTestt: 0.7650062765355251
+INFO:root:====epoch 62 SupervisedLoss 0.35299666149150327
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9068042096525091 EvalVal: 0.752182229206533 EvalTestt: 0.764744942118429
+INFO:root:====epoch 63 SupervisedLoss 0.35703109224023405
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9109884439645913 EvalVal: 0.7716233094825066 EvalTestt: 0.7752169414067555
+INFO:root:====epoch 64 SupervisedLoss 0.341184596630039
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9093263212442185 EvalVal: 0.7628669956177394 EvalTestt: 0.7602750880538864
+INFO:root:====epoch 65 SupervisedLoss 0.3507435845362123
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9084760408881858 EvalVal: 0.7615246185843582 EvalTestt: 0.7811126745281817
+INFO:root:====epoch 66 SupervisedLoss 0.34020300324466873
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8832713957744593 EvalVal: 0.7448742908792113 EvalTestt: 0.7737831724975663
+INFO:root:====epoch 67 SupervisedLoss 0.35049536277336907
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9062821502757918 EvalVal: 0.7507474637398825 EvalTestt: 0.7896203690164688
+INFO:root:====epoch 68 SupervisedLoss 0.3502720574186315
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9164503017833363 EvalVal: 0.7683023290722693 EvalTestt: 0.7874586126698324
+INFO:root:====epoch 69 SupervisedLoss 0.3437171843553259
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9119710981099935 EvalVal: 0.7752046606557166 EvalTestt: 0.7844729124012263
+INFO:root:====epoch 70 SupervisedLoss 0.343333526274877
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9157132558962442 EvalVal: 0.771500494672285 EvalTestt: 0.7822661682147731
+INFO:root:====epoch 71 SupervisedLoss 0.34290218842732667
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9190359102096934 EvalVal: 0.7666589147553522 EvalTestt: 0.7746033388466953
+INFO:root:====epoch 72 SupervisedLoss 0.3438857191854164
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9160444946087116 EvalVal: 0.7693785424933409 EvalTestt: 0.7621785428753811
+INFO:root:====epoch 73 SupervisedLoss 0.3420180104610326
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9117490471997451 EvalVal: 0.7591771610774716 EvalTestt: 0.779172107731905
+INFO:root:====epoch 74 SupervisedLoss 0.3424607280941683
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9167799775555848 EvalVal: 0.7581364188057654 EvalTestt: 0.7812819180882112
+INFO:root:====epoch 75 SupervisedLoss 0.3401796030990418
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9081504227837256 EvalVal: 0.7319717108092618 EvalTestt: 0.7626915725244043
+INFO:root:====epoch 76 SupervisedLoss 0.3401854065235467
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9142944297376778 EvalVal: 0.7743488890485126 EvalTestt: 0.7608908109591863
+INFO:root:====epoch 77 SupervisedLoss 0.32995678431443887
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9194317016833087 EvalVal: 0.7592676046327009 EvalTestt: 0.768144873428649
+INFO:root:====epoch 78 SupervisedLoss 0.34339090300054137
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9110171115776027 EvalVal: 0.7525214006279779 EvalTestt: 0.7979450584648065
+INFO:root:====epoch 79 SupervisedLoss 0.33367171714031657
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.917185100999564 EvalVal: 0.7414134567949198 EvalTestt: 0.7751552927257926
+INFO:root:====epoch 80 SupervisedLoss 0.3378494896446871
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.920795945537009 EvalVal: 0.7587475739696508 EvalTestt: 0.7773239104672764
+INFO:root:====epoch 81 SupervisedLoss 0.3394606432574479
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9232226855772652 EvalVal: 0.7548246748469798 EvalTestt: 0.7842936738718324
+INFO:root:====epoch 82 SupervisedLoss 0.32737031049403964
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9212157017929486 EvalVal: 0.7533091969550002 EvalTestt: 0.7749975928742335
+INFO:root:====epoch 83 SupervisedLoss 0.32099474875819184
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9107377104255189 EvalVal: 0.7633350388730304 EvalTestt: 0.7786020845288102
+INFO:root:====epoch 84 SupervisedLoss 0.33007827097380377
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9180595759398626 EvalVal: 0.7433764058839678 EvalTestt: 0.7779940679866414
+INFO:root:====epoch 85 SupervisedLoss 0.32732708213064315
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9224739448152861 EvalVal: 0.7547432418400056 EvalTestt: 0.778501739049933
+INFO:root:====epoch 86 SupervisedLoss 0.3291233469170807
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9292520549128285 EvalVal: 0.7709038861242781 EvalTestt: 0.7754364633528821
+INFO:root:====epoch 87 SupervisedLoss 0.3260539458298039
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9271787067110513 EvalVal: 0.7775644715802115 EvalTestt: 0.788927755828588
+INFO:root:====epoch 88 SupervisedLoss 0.3248592066308617
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.927751986709195 EvalVal: 0.7600791632907552 EvalTestt: 0.7838265718232424
+INFO:root:====epoch 89 SupervisedLoss 0.32637432821371987
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9316315221154935 EvalVal: 0.7477629270688791 EvalTestt: 0.7686260967901706
+INFO:root:====epoch 90 SupervisedLoss 0.33318702341033707
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9227659926237801 EvalVal: 0.757235902157616 EvalTestt: 0.7673840925699054
+INFO:root:====epoch 91 SupervisedLoss 0.3204742057773837
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9243083365372435 EvalVal: 0.7493529017830599 EvalTestt: 0.773374285811527
+INFO:root:====epoch 92 SupervisedLoss 0.31915033468578696
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9189906795828872 EvalVal: 0.7489233594550815 EvalTestt: 0.7735456090870152
+INFO:root:====epoch 93 SupervisedLoss 0.31458330673303525
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9328345247790506 EvalVal: 0.7526996288239792 EvalTestt: 0.7615556299132219
+INFO:root:====epoch 94 SupervisedLoss 0.31638492187337314
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9340148595183954 EvalVal: 0.7487544099919519 EvalTestt: 0.7684855392294714
+INFO:root:====epoch 95 SupervisedLoss 0.32135598935444515
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9256653376965245 EvalVal: 0.7560829715835375 EvalTestt: 0.7728552530340025
+INFO:root:====epoch 96 SupervisedLoss 0.32047199332329984
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9291163358987786 EvalVal: 0.7651931792503455 EvalTestt: 0.7820578320212419
+INFO:root:====epoch 97 SupervisedLoss 0.3207466714148271
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9284563957190604 EvalVal: 0.7574042896155984 EvalTestt: 0.7731617156177606
+INFO:root:====epoch 98 SupervisedLoss 0.32122884907080906
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9304667188157097 EvalVal: 0.765520675782656 EvalTestt: 0.7763254283025718
+INFO:root:====epoch 99 SupervisedLoss 0.3118078933539727
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9303113259268668 EvalVal: 0.7545252743941337 EvalTestt: 0.7729483232339275
+INFO:root:====epoch 100 SupervisedLoss 0.31717884118348305
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9310503935851236 EvalVal: 0.7640237050745157 EvalTestt: 0.7639581457530489
+INFO:root:FinalTestScore: 0.7979450584648065
+INFO:root:MoleculeDataset(93087)
+INFO:root:scaffold
+INFO:root:Data(edge_attr=[30, 2], id=[1], y=[17], x=[15, 2], edge_index=[2, 30])
+INFO:root:====epoch 1 SupervisedLoss 1.4971359038648235
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.6801306334231543 EvalVal: 0.7175126450059869 EvalTestt: 0.6574286721480359
+INFO:root:====epoch 2 SupervisedLoss 0.45190927329366587
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7140043451787156 EvalVal: 0.6908958948342171 EvalTestt: 0.6659621295778134
+INFO:root:====epoch 3 SupervisedLoss 0.4509380946245474
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.6924438478443372 EvalVal: 0.6389640604168663 EvalTestt: 0.6519123612005522
+INFO:root:====epoch 4 SupervisedLoss 0.4415584245411089
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7376891476211281 EvalVal: 0.7366404098481397 EvalTestt: 0.6929453731106161
+INFO:root:====epoch 5 SupervisedLoss 0.44245195832362855
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7342058253469016 EvalVal: 0.7059353279886147 EvalTestt: 0.6449494945492839
+INFO:root:====epoch 6 SupervisedLoss 0.4365219451081808
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7735553021280982 EvalVal: 0.769342857112349 EvalTestt: 0.7193972840104599
+INFO:root:====epoch 7 SupervisedLoss 0.43312847101632074
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.769729637266376 EvalVal: 0.7385991836125627 EvalTestt: 0.682055664905169
+INFO:root:====epoch 8 SupervisedLoss 0.4306179463014461
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7711250085438743 EvalVal: 0.7348355641291073 EvalTestt: 0.687826686836192
+INFO:root:====epoch 9 SupervisedLoss 0.4308638166568645
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7946262770322898 EvalVal: 0.7521381706203494 EvalTestt: 0.709544617779873
+INFO:root:====epoch 10 SupervisedLoss 0.41941468757525885
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.797267775106731 EvalVal: 0.7617662285675895 EvalTestt: 0.701492956646914
+INFO:root:====epoch 11 SupervisedLoss 0.4185944983797107
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7913633495628284 EvalVal: 0.717592061326953 EvalTestt: 0.6367456146093887
+INFO:root:====epoch 12 SupervisedLoss 0.4188274686616144
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7956249372137018 EvalVal: 0.7611377426519728 EvalTestt: 0.6639812909075801
+INFO:root:====epoch 13 SupervisedLoss 0.4169962102278932
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8176860220949798 EvalVal: 0.7487646128950933 EvalTestt: 0.677347421973538
+INFO:root:====epoch 14 SupervisedLoss 0.41537778369915207
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8157024237758375 EvalVal: 0.7652960607677413 EvalTestt: 0.7542063552620298
+INFO:root:====epoch 15 SupervisedLoss 0.4138335305008279
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8187594371070388 EvalVal: 0.7649025834214088 EvalTestt: 0.7002341187966891
+INFO:root:====epoch 16 SupervisedLoss 0.40333816601561895
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8180506946272059 EvalVal: 0.7575431900234965 EvalTestt: 0.6861040991265815
+INFO:root:====epoch 17 SupervisedLoss 0.4048930455051132
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8203587333433834 EvalVal: 0.7565828884682293 EvalTestt: 0.7180989412333149
+INFO:root:====epoch 18 SupervisedLoss 0.4082351088266444
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.823954895195663 EvalVal: 0.7664461477118165 EvalTestt: 0.7140303997077173
+INFO:root:====epoch 19 SupervisedLoss 0.40283787539112414
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8308557168563877 EvalVal: 0.753123467707772 EvalTestt: 0.7030225476958678
+INFO:root:====epoch 20 SupervisedLoss 0.39982664984042365
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8324460770719998 EvalVal: 0.7695320809822991 EvalTestt: 0.7175284146632271
+INFO:root:====epoch 21 SupervisedLoss 0.3968799151081592
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8358625581491146 EvalVal: 0.7722486295055306 EvalTestt: 0.7161278480347639
+INFO:root:====epoch 22 SupervisedLoss 0.39818193467402746
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8348109919217693 EvalVal: 0.7397667092964768 EvalTestt: 0.6970035278916257
+INFO:root:====epoch 23 SupervisedLoss 0.39581931713239105
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8332210411580614 EvalVal: 0.7597549218424859 EvalTestt: 0.7199079137442843
+INFO:root:====epoch 24 SupervisedLoss 0.3973923003227198
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8349678870513177 EvalVal: 0.7570191200038628 EvalTestt: 0.7181430968968958
+INFO:root:====epoch 25 SupervisedLoss 0.3966425951899091
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8450753429603522 EvalVal: 0.7574672481839865 EvalTestt: 0.7528943506052597
+INFO:root:====epoch 26 SupervisedLoss 0.3947789869139284
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8444509255902888 EvalVal: 0.761482581140416 EvalTestt: 0.7379264619693154
+INFO:root:====epoch 27 SupervisedLoss 0.3907102577847056
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8579972632066604 EvalVal: 0.7583966974519238 EvalTestt: 0.74478366954023
+INFO:root:====epoch 28 SupervisedLoss 0.3891268385549996
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8573703159018876 EvalVal: 0.755426825145928 EvalTestt: 0.7320922296410182
+INFO:root:====epoch 29 SupervisedLoss 0.38469587715551645
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8637421513983476 EvalVal: 0.7525129574603938 EvalTestt: 0.7435725104786162
+INFO:root:====epoch 30 SupervisedLoss 0.3893495108354041
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8533336736158501 EvalVal: 0.7457963056353986 EvalTestt: 0.7574831239501705
+INFO:root:====epoch 31 SupervisedLoss 0.3864219680950583
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8644577750339337 EvalVal: 0.7632966096004538 EvalTestt: 0.7422449200497053
+INFO:root:====epoch 32 SupervisedLoss 0.37923171234350905
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8665745066279262 EvalVal: 0.7746356804065285 EvalTestt: 0.7542143256730627
+INFO:root:====epoch 33 SupervisedLoss 0.38200297173018233
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8704544732299931 EvalVal: 0.7534876246636403 EvalTestt: 0.7440715275865163
+INFO:root:====epoch 34 SupervisedLoss 0.38026525448839166
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8770583413252617 EvalVal: 0.7663490521911053 EvalTestt: 0.7451005133306546
+INFO:root:====epoch 35 SupervisedLoss 0.3744850854270085
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8709271719375815 EvalVal: 0.7556284707023742 EvalTestt: 0.7613180802087685
+INFO:root:====epoch 36 SupervisedLoss 0.3728012288566358
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8779117249178383 EvalVal: 0.7702042763561013 EvalTestt: 0.7453436249210209
+INFO:root:====epoch 37 SupervisedLoss 0.37071995820782694
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8736714611857805 EvalVal: 0.7512461510956374 EvalTestt: 0.7503170217761491
+INFO:root:====epoch 38 SupervisedLoss 0.3730233221384941
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8779057513341231 EvalVal: 0.7521084680498019 EvalTestt: 0.7675629168872055
+INFO:root:====epoch 39 SupervisedLoss 0.3714800540169872
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8813504373398133 EvalVal: 0.7465330243212407 EvalTestt: 0.7611143795395675
+INFO:root:====epoch 40 SupervisedLoss 0.3666939925133928
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8712640633666369 EvalVal: 0.7510280521690681 EvalTestt: 0.7606886455107339
+INFO:root:====epoch 41 SupervisedLoss 0.37135362323941984
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8828474550007176 EvalVal: 0.7648441574902836 EvalTestt: 0.7387464015201927
+INFO:root:====epoch 42 SupervisedLoss 0.36898645728355745
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8847102203549643 EvalVal: 0.7581722693609287 EvalTestt: 0.7706368427056683
+INFO:root:====epoch 43 SupervisedLoss 0.36730843782003736
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8850215381659531 EvalVal: 0.7612105698185698 EvalTestt: 0.7599191682381043
+INFO:root:====epoch 44 SupervisedLoss 0.36725185601154114
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8939252786370955 EvalVal: 0.7689845327187244 EvalTestt: 0.7430601930348043
+INFO:root:====epoch 45 SupervisedLoss 0.36252876358632086
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.896025294766902 EvalVal: 0.7655641118403431 EvalTestt: 0.7697199593478523
+INFO:root:====epoch 46 SupervisedLoss 0.3654932791517553
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8884114568940765 EvalVal: 0.7727350602411063 EvalTestt: 0.7643590670938013
+INFO:root:====epoch 47 SupervisedLoss 0.3594887392198373
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8908853795166908 EvalVal: 0.7533812638915995 EvalTestt: 0.7424205422826754
+INFO:root:====epoch 48 SupervisedLoss 0.3648559437241969
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9017824298666093 EvalVal: 0.7537260502240236 EvalTestt: 0.7602081178665092
+INFO:root:====epoch 49 SupervisedLoss 0.35743270989789366
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8951707223368778 EvalVal: 0.7594141201978306 EvalTestt: 0.752441115852214
+INFO:root:====epoch 50 SupervisedLoss 0.35687268141386314
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8823219553258363 EvalVal: 0.7707181004028325 EvalTestt: 0.7610266915805679
+INFO:root:====epoch 51 SupervisedLoss 0.35688342088070757
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9036785918423926 EvalVal: 0.7598282574174551 EvalTestt: 0.7669831940765112
+INFO:root:====epoch 52 SupervisedLoss 0.3571754456564039
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9004799334567111 EvalVal: 0.7469371412751387 EvalTestt: 0.7552130115544959
+INFO:root:====epoch 53 SupervisedLoss 0.3554773293550035
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.901037896296983 EvalVal: 0.7599092529322332 EvalTestt: 0.7606225962488226
+INFO:root:====epoch 54 SupervisedLoss 0.3540937038686997
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.898762894449751 EvalVal: 0.7400597743465318 EvalTestt: 0.7645684258492064
+INFO:root:====epoch 55 SupervisedLoss 0.3538790032006538
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9009063045535255 EvalVal: 0.7450727184850995 EvalTestt: 0.7850159892599725
+INFO:root:====epoch 56 SupervisedLoss 0.3494297235590813
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9009455909539377 EvalVal: 0.7553233481099335 EvalTestt: 0.7599925226787562
+INFO:root:====epoch 57 SupervisedLoss 0.34911312028559116
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9063405728140519 EvalVal: 0.7452433886418268 EvalTestt: 0.7892172895770261
+INFO:root:====epoch 58 SupervisedLoss 0.3539818251448926
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9008219309585295 EvalVal: 0.7451451602196878 EvalTestt: 0.7702698178748432
+INFO:root:====epoch 59 SupervisedLoss 0.35100971557214267
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.8963654822573989 EvalVal: 0.7529235090460962 EvalTestt: 0.7615222761882126
+INFO:root:====epoch 60 SupervisedLoss 0.35235510963768735
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9014681716508475 EvalVal: 0.7605699137315622 EvalTestt: 0.7709123305208772
+INFO:root:====epoch 61 SupervisedLoss 0.3465690233574813
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9041179296899664 EvalVal: 0.7421628251093003 EvalTestt: 0.7807340181975603
+INFO:root:====epoch 62 SupervisedLoss 0.343600195291515
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.908793962765381 EvalVal: 0.7834007907334916 EvalTestt: 0.7925660626051265
+INFO:root:====epoch 63 SupervisedLoss 0.3490515728546188
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9023803744813965 EvalVal: 0.7463678513047616 EvalTestt: 0.7503902548850152
+INFO:root:====epoch 64 SupervisedLoss 0.3466557317573555
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.905046971693774 EvalVal: 0.7439851180950636 EvalTestt: 0.7765943543593854
+INFO:root:====epoch 65 SupervisedLoss 0.34646024900904515
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9076804660141357 EvalVal: 0.7347680015352572 EvalTestt: 0.7668175224656802
+INFO:root:====epoch 66 SupervisedLoss 0.33771222297011333
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9059342293374931 EvalVal: 0.7532357536368149 EvalTestt: 0.7573442227598761
+INFO:root:====epoch 67 SupervisedLoss 0.34000694848381546
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9002506047475002 EvalVal: 0.7432359805082798 EvalTestt: 0.7558814834241845
+INFO:root:====epoch 68 SupervisedLoss 0.3414548797531403
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9066505095987821 EvalVal: 0.7521395938473447 EvalTestt: 0.7778947229279388
+INFO:root:====epoch 69 SupervisedLoss 0.339598675381188
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9029276647265024 EvalVal: 0.7409624568557703 EvalTestt: 0.7555265766556658
+INFO:root:====epoch 70 SupervisedLoss 0.33874700010120457
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9142966574340656 EvalVal: 0.7524661379169123 EvalTestt: 0.7654882185896691
+INFO:root:====epoch 71 SupervisedLoss 0.34243483253532747
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9152076897316774 EvalVal: 0.7607099298778667 EvalTestt: 0.7446699470527844
+INFO:root:====epoch 72 SupervisedLoss 0.33580574439670785
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9107170481623686 EvalVal: 0.7376191316643541 EvalTestt: 0.7585828267575235
+INFO:root:====epoch 73 SupervisedLoss 0.33916999933342973
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9134364906253523 EvalVal: 0.7565585927071392 EvalTestt: 0.7471564973619026
+INFO:root:====epoch 74 SupervisedLoss 0.33821669437498636
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9147663051846935 EvalVal: 0.7445539888671661 EvalTestt: 0.7695020194847488
+INFO:root:====epoch 75 SupervisedLoss 0.33421779349481207
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9002494615801089 EvalVal: 0.7443356663239648 EvalTestt: 0.7816932184127533
+INFO:root:====epoch 76 SupervisedLoss 0.32994623974238807
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9096345921698185 EvalVal: 0.7476584647753359 EvalTestt: 0.7622746523228334
+INFO:root:====epoch 77 SupervisedLoss 0.3358557099191146
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.923449207868592 EvalVal: 0.7496730874581284 EvalTestt: 0.7596394276766286
+INFO:root:====epoch 78 SupervisedLoss 0.3316424761601793
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9173794029448517 EvalVal: 0.7507740347691406 EvalTestt: 0.7431791256783603
+INFO:root:====epoch 79 SupervisedLoss 0.3353508205908922
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9192551546060916 EvalVal: 0.7449530556913666 EvalTestt: 0.7779604946370778
+INFO:root:====epoch 80 SupervisedLoss 0.3289004149030958
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9185872960004023 EvalVal: 0.7305348738671317 EvalTestt: 0.748525025908919
+INFO:root:====epoch 81 SupervisedLoss 0.3339691615663858
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9187381155845549 EvalVal: 0.7594167300212391 EvalTestt: 0.7723553555890149
+INFO:root:====epoch 82 SupervisedLoss 0.3326870591077161
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9203276365658815 EvalVal: 0.7407494616511041 EvalTestt: 0.7434284208533881
+INFO:root:====epoch 83 SupervisedLoss 0.32759892741661667
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9223785655773098 EvalVal: 0.7403094920010749 EvalTestt: 0.7483333928484017
+INFO:root:====epoch 84 SupervisedLoss 0.32376944334084307
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9055744269929659 EvalVal: 0.7293843194099479 EvalTestt: 0.7533610150991296
+INFO:root:====epoch 85 SupervisedLoss 0.3245360987297309
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9233153914715002 EvalVal: 0.736613104007399 EvalTestt: 0.784013432515713
+INFO:root:====epoch 86 SupervisedLoss 0.3224399714578822
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9203708068036155 EvalVal: 0.7350840614607984 EvalTestt: 0.7795963743351664
+INFO:root:====epoch 87 SupervisedLoss 0.32492356357178276
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9280749651479572 EvalVal: 0.7373386500878184 EvalTestt: 0.7662112124836483
+INFO:root:====epoch 88 SupervisedLoss 0.31873053384903727
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9289419933489075 EvalVal: 0.7465264713327129 EvalTestt: 0.7701766849344661
+INFO:root:====epoch 89 SupervisedLoss 0.3240401640640081
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9246688875003349 EvalVal: 0.7352396430949746 EvalTestt: 0.7701929643719586
+INFO:root:====epoch 90 SupervisedLoss 0.3212562397687721
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9234484703136917 EvalVal: 0.7294010580436948 EvalTestt: 0.7554080499778862
+INFO:root:====epoch 91 SupervisedLoss 0.31753812462484315
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9240004964783335 EvalVal: 0.7482179927429766 EvalTestt: 0.7577743517147949
+INFO:root:====epoch 92 SupervisedLoss 0.3213289023185886
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9251432683998189 EvalVal: 0.7337043701951427 EvalTestt: 0.7632994885551779
+INFO:root:====epoch 93 SupervisedLoss 0.32214974756007586
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9092280343395227 EvalVal: 0.7120683905527377 EvalTestt: 0.7539640617564414
+INFO:root:====epoch 94 SupervisedLoss 0.31989612923984234
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9213938363959946 EvalVal: 0.732643415768706 EvalTestt: 0.7718262030320123
+INFO:root:====epoch 95 SupervisedLoss 0.31530889679338686
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9290205253251527 EvalVal: 0.7319666839994545 EvalTestt: 0.7658786675141057
+INFO:root:====epoch 96 SupervisedLoss 0.3161004458566338
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9331085711182807 EvalVal: 0.7370690267562742 EvalTestt: 0.7686562439558958
+INFO:root:====epoch 97 SupervisedLoss 0.3239657139795328
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9319935265000491 EvalVal: 0.7427647775282902 EvalTestt: 0.7560758841530867
+INFO:root:====epoch 98 SupervisedLoss 0.32287714139161017
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9229547103694711 EvalVal: 0.7285854310931157 EvalTestt: 0.7508481881080843
+INFO:root:====epoch 99 SupervisedLoss 0.3144225647692536
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9127245867319131 EvalVal: 0.6935025073792329 EvalTestt: 0.7462638501875873
+INFO:root:====epoch 100 SupervisedLoss 0.3141621045593042
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9368990614094688 EvalVal: 0.745116806865475 EvalTestt: 0.7747370145508443
+INFO:root:FinalTestScore: 0.7925660626051265
+INFO:root:Mean Testscore: 79.76±0.40

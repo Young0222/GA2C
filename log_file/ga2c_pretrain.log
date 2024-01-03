@@ -1,0 +1,35 @@
+INFO:root:Using Device: cuda:3
+INFO:root:Seed: 2024
+INFO:root:Namespace(actor_view_lr=0.001, batch_size=1024, critic_view_lr=0.001, dataset='zinc_standard_agent', drop_ratio=0.0, emb_dim=300, epochs=100, mlp_edge_model_dim=64, model_lr=0.001, num_gc_layers=3, pooling_type='layerwise', reg_lambda=0.0, seed=2024)
+INFO:root:====epoch 1
+INFO:root:current reward: 6.900038242340088
+INFO:root:Epoch 1, Model Loss 5009.7305, Actor Loss 12389.0361, Critic Loss 224939.2812
+INFO:root:====epoch 2
+INFO:root:Epoch 2, Model Loss 4263.3345, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:====epoch 3
+INFO:root:Epoch 3, Model Loss 3849.5312, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:====epoch 4
+INFO:root:current reward: 6.766078472137451
+INFO:root:Epoch 4, Model Loss 3652.6426, Actor Loss 4939.2397, Critic Loss 211793.1719
+INFO:root:====epoch 5
+INFO:root:Epoch 5, Model Loss 3485.0552, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:====epoch 6
+INFO:root:Epoch 6, Model Loss 3401.2227, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:====epoch 7
+INFO:root:current reward: 6.751483917236328
+INFO:root:Epoch 7, Model Loss 3155.0015, Actor Loss 1295.1216, Critic Loss 206938.1875
+INFO:root:====epoch 8
+INFO:root:Epoch 8, Model Loss 3100.1401, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:====epoch 9
+INFO:root:Epoch 9, Model Loss 3030.5823, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:====epoch 10
+INFO:root:current reward: 6.737753868103027
+INFO:root:Epoch 10, Model Loss 2828.4529, Actor Loss 554.4841, Critic Loss 204422.9531
+INFO:root:====epoch 11
+INFO:root:Epoch 11, Model Loss 2780.8362, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:====epoch 12
+INFO:root:Epoch 12, Model Loss 2739.4585, Actor Loss 0.0000, Critic Loss 0.0000
+INFO:root:====epoch 13
+INFO:root:current reward: 6.636232852935791
+INFO:root:Epoch 13, Model Loss 2614.6658, Actor Loss 306.4646, Critic Loss 195848.6094
+INFO:root:====epoch 14

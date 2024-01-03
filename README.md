@@ -3,7 +3,7 @@
 ## This is the PyTorch implementation code for our paper: Graph Contrastive Learning with Reinforcement Augmentation
 
 
-## Environment Requirements
+## 🔬 Environment Requirements
 
 The code has been tested under Python 3.8.8. The required packages are as follows:
 
@@ -17,23 +17,25 @@ The code has been tested under Python 3.8.8. The required packages are as follow
   
 You can use 'pip install -r requirement.txt' to install dependency packages.
 
-## Unsupervised learning
+## 🚀 Unsupervised learning
 
+```
 python a2c_gcl_tu.py --seed 2024 --downstream_classifier SVC
+```
 
-## Transfer learning
+## 🚀 Transfer learning
 
 Pretrain on ZINC-2M: python a2c_transfer_pretrain_chem.py
 
 Fintune on a specific dataset: python a2c_transfer_finetune_chem.py
 
-## Semi-supervised learning
+## 🚀 Semi-supervised learning
 
 In the folder of 'semi_supervised', please run:
 
 python main.py --exp=joint_cl_exp --semi_split=10 --dataset=COLLAB --save=joint_cl_exp --epochs=100 --batch_size=32 --lr=0.001
 
-## Log file
+## 📚 Log file
 
 We have preserved the model training logs in the 'log_file' folder. For instance, the unsupervised learning log results of GA2C on the MUTAG dataset are as follows:
 

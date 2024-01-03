@@ -25,20 +25,25 @@ python a2c_gcl_tu.py --seed 2024 --downstream_classifier SVC
 
 ## 🚀 Transfer learning
 
+```
 Pretrain on ZINC-2M: python a2c_transfer_pretrain_chem.py
 
 Fintune on a specific dataset: python a2c_transfer_finetune_chem.py
+```
 
 ## 🚀 Semi-supervised learning
 
 In the folder of 'semi_supervised', please run:
 
+```
 python main.py --exp=joint_cl_exp --semi_split=10 --dataset=COLLAB --save=joint_cl_exp --epochs=100 --batch_size=32 --lr=0.001
+```
 
 ## 📚 Log file
 
 We have preserved the model training logs in the 'log_file' folder. For instance, the unsupervised learning log results of GA2C on the MUTAG dataset are as follows:
 
+```
 INFO:root:Running tu......  
 INFO:root:Using Device: cuda:2  
 INFO:root:Seed: 2024  
@@ -64,4 +69,5 @@ INFO:root:BestEpoch: 3
 INFO:root:BestTrainScore: 0.9096491228070175  
 INFO:root:BestValidationScore: 0.9096491228070175  
 INFO:root:FinalTestScore: 0.9096491228070175  
-INFO:root:Mean Testscore: **90.34±0.39**  
+INFO:root:Mean Testscore: **90.34±0.39**
+```

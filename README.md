@@ -71,3 +71,33 @@ INFO:root:BestValidationScore: 0.9096491228070175
 INFO:root:FinalTestScore: 0.9096491228070175  
 INFO:root:Mean Testscore: **90.34±0.39**
 ```
+
+The semi-supervised learning log results of GA2C on the MUV dataset are as follows:
+
+```
+INFO:root:Using Device: cuda:2  
+INFO:root:Seed: 2024  
+INFO:root:Namespace(JK='last', batch_size=32, dataset='muv', decay=0.0, device=0, dropout_ratio=0.5, emb_dim=300, epochs=100, eval_train=1, gnn_type='gin', graph_pooling='mean', input_model_file='./models_ga2c/chem/1024pretrain_ga2c_seed_2024_reg_0.0_epoch_10.pth', lr=0.001, lr_scale=1, num_layer=3, num_workers=4, seed=2024, split='scaffold')  
+INFO:root:MoleculeDataset(93087)  
+INFO:root:scaffold  
+INFO:root:Data(edge_attr=[30, 2], id=[1], y=[17], x=[15, 2], edge_index=[2, 30])  
+INFO:root:====epoch 1 SupervisedLoss 1.5139828881726405  
+INFO:root:====Evaluation  
+INFO:root:EvalTrain: 0.6646693010909368 EvalVal: 0.6188019984544774 EvalTestt: 0.6005540732476364  
+INFO:root:====epoch 2 SupervisedLoss 0.4534396019915234  
+INFO:root:====Evaluation  
+INFO:root:EvalTrain: 0.6454371420363606 EvalVal: 0.6449092016253598 EvalTestt: 0.646384124498649  
+INFO:root:====epoch 3 SupervisedLoss 0.4506925367691132
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7177383277189476 EvalVal: 0.6803288988563876 EvalTestt: 0.6787941707186023
+INFO:root:====epoch 4 SupervisedLoss 0.44905699498268764
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.7410288882863967 EvalVal: 0.7447307387734368 EvalTestt: 0.7058885491854934
+INFO:root:====epoch 5 SupervisedLoss 0.44011415983783064
+...
+INFO:root:====epoch 100 SupervisedLoss 0.3141621045593042
+INFO:root:====Evaluation
+INFO:root:EvalTrain: 0.9368990614094688 EvalVal: 0.745116806865475 EvalTestt: 0.7747370145508443
+INFO:root:FinalTestScore: 0.7925660626051265
+INFO:root:Mean Testscore: 79.76±0.40
+```

@@ -100,7 +100,7 @@ def run(args):
     root_logger = logging.getLogger()
     for h in root_logger.handlers:
         root_logger.removeHandler(h)
-    log_file = '/home/xjc/444_ga2c/ga2c-main/1024.ga2c_pretrain.log'
+    log_file = './case_ga2c_pretrain.log'
     logging.basicConfig(filename=log_file, level=logging.INFO, filemode='a')
     device = torch.device('cuda:3' if torch.cuda.is_available() else 'cpu')
     logging.info("Using Device: %s" % device)

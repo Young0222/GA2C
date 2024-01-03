@@ -46,17 +46,6 @@ class ZINC(InMemoryDataset):
     def processed_file_names(self):
         return ['all.pt', 'train.pt', 'val.pt', 'test.pt']
 
-    # def download(self):
-    #     shutil.rmtree(self.raw_dir)
-    #     path = download_url(self.url, self.root)
-    #     # path = '/home/thu421/lzy/nips22-code/-main/original_datasets/ZINC/'
-    #     extract_zip(path, self.root)
-    #     os.rename(osp.join(self.root, 'molecules'), self.raw_dir)
-    #     os.unlink(path)
-
-    #     for split in ['train', 'val', 'test']:
-    #         download_url(self.split_url.format(split), self.raw_dir)
-
     def process(self):
         all_data_list = []
         for split in ['train', 'val', 'test']:

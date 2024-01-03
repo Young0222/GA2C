@@ -226,7 +226,7 @@ if __name__ == "__main__":
         root_logger = logging.getLogger()
         for h in root_logger.handlers:
             root_logger.removeHandler(h)
-        log_file = '/home/xjc/444_ga2c/ga2c-main/ga2c.finetune.'+str(dataset)+'.log'
+        log_file = str(dataset)+'.log'
         logging.basicConfig(filename=log_file, level=logging.INFO, filemode='a')
         device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
         logging.info("Using Device: %s" % device)

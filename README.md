@@ -125,38 +125,6 @@ More examples are provided in:
 - `run_us_ts_ga2c.sh`
 - `semi_supervised/run_ss_ga2c.sh`
 
-## 📊 Logged Results
-
-This repository already includes training logs in `log_file/`. A few final scores from the saved logs are listed below.
-
-### Unsupervised learning
-
-| Dataset | Mean Test Score |
-| --- | --- |
-| MUTAG | `90.34±0.39` |
-| NCI1 | `80.62±0.39` |
-| DD | `77.20±0.67` |
-| PROTEINS | `75.67±0.52` |
-| COLLAB | `72.13±0.34` |
-
-### Transfer learning
-
-| Dataset | Mean Test Score |
-| --- | --- |
-| BACE | `82.34±0.12` |
-| MUV | `79.76±0.40` |
-| BBBP | `74.30±1.03` |
-| ToxCast | `64.18±0.26` |
-
-### Semi-supervised learning
-
-Saved experiment logs under `semi_supervised/exp/joint_cl_exp/` include:
-
-| Dataset | Test Accuracy |
-| --- | --- |
-| MUTAG | `87.25 ± 7.27` |
-| PROTEINS | `75.84 ± 2.58` |
-
 ## 📝 Notes
 
 - The saved logs in `log_file/` are a good starting point if you want to compare your own runs with the authors' outputs.

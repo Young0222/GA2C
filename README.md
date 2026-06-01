@@ -150,7 +150,3 @@ If you find this repository useful, please cite:
   url       = {https://doi.org/10.24963/ijcai.2024/246}
 }
 ```
-
-## 🙌 Acknowledgment
-
-Thanks for your interest in GA2C. If this project helps your research, a citation is greatly appreciated.

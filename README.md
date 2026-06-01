@@ -1,103 +1,188 @@
-# GA2C
+# 🧠 GA2C: Graph Contrastive Learning with Reinforcement Augmentation
 
-## This is the PyTorch implementation code for our paper: Graph Contrastive Learning with Reinforcement Augmentation
+> A PyTorch implementation of **GA2C**, a graph contrastive learning framework that models graph augmentation as a sequential decision process.
 
+[![Paper](https://img.shields.io/badge/Paper-IJCAI%202024-blue)](https://www.ijcai.org/proceedings/2024/0246)
+[![Python](https://img.shields.io/badge/Python-3.8.8-green)](#-environment)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.8.0-red)](#-environment)
 
-## 🔬 Environment Requirements
+## ✨ Overview
 
-The code has been tested under Python 3.8.8. The required packages are as follows:
+Graph contrastive learning often depends on graph data augmentation, but many methods treat each augmentation step as an isolated action. GA2C takes a different path. It models augmentation as a **Markov decision process** and learns graph views with an **advantage actor critic** strategy.
 
-* torch==1.8.0
-* torch-geometric==2.0.2
-* torch-scatter==2.0.9
-* torch-sparse==0.6.9
-* torch-spline-conv==1.2.2
-* torchvision==0.9.0
-* ...
-  
-You can use 'pip install -r requirement.txt' to install dependency packages.
+This repository includes three settings:
 
-## 🚀 Unsupervised learning
+- 🔬 **Unsupervised learning** on TU datasets
+- 🧪 **Transfer learning** for molecular graphs
+- 🧬 **Semi-supervised learning** on graph classification benchmarks
 
+## 📄 Paper
+
+**Graph Contrastive Learning with Reinforcement Augmentation**  
+Ziyang Liu, Chaokun Wang, Cheng Wu  
+IJCAI 2024
+
+- Paper: [🔗](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ijcai.org/proceedings/2024/0246.pdf)
+- Official IJCAI page: [🔗](https://www.ijcai.org/proceedings/2024/0246)
+- DOI: [10.24963/ijcai.2024/246](https://doi.org/10.24963/ijcai.2024/246)
+
+## 🌟 Key Ideas
+
+- 🎯 **Sequential augmentation**: graph augmentation is modeled as a multi step decision process instead of a one shot perturbation.
+- 🎭 **Actor critic design**: an actor generates augmented views, and a critic estimates their long term value.
+- 🔁 **Joint optimization**: the augmentation policy and the graph encoder improve each other during training.
+- 🧪 **Broad evaluation**: the codebase covers unsupervised, transfer, and semi-supervised graph learning.
+- 🧾 **Saved training logs**: final logs are included for quick reference and reproduction support.
+
+## 🗂️ Repository Structure
+
+```text
+GA2C-main/
+├── a2c_gcl_tu.py                   # Unsupervised learning on TU datasets
+├── a2c_transfer_pretrain_chem.py   # Molecular pretraining on ZINC
+├── a2c_transfer_finetune_chem.py   # Molecular finetuning on downstream tasks
+├── semi_supervised/                # Semi-supervised experiments
+├── transfer/                       # Transfer learning models and utilities
+├── unsupervised/                   # Unsupervised encoders, learners, and utils
+├── datasets/                       # Dataset wrappers
+├── case_study/                     # Molecule view examples
+├── log_file/                       # Saved training logs
+└── requirements.txt                # Dependency list
 ```
+
+## ⚙️ Environment
+
+The code was developed with the following setup:
+
+- Python `3.8.8`
+- PyTorch `1.8.0`
+- torch-geometric `2.0.2`
+- torch-scatter `2.0.9`
+- torch-sparse `0.6.9`
+- torch-spline-conv `1.2.2`
+- torchvision `0.9.0`
+- rdkit `2023.3.1`
+
+Install dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🚀 Quick Start
+
+### 1. Unsupervised learning
+
+Run GA2C on TU datasets:
+
+```bash
 python a2c_gcl_tu.py --seed 2024 --downstream_classifier SVC
 ```
 
-## 🚀 Transfer learning
+Useful default settings in `a2c_gcl_tu.py`:
 
+- dataset: `REDDIT-MULTI-5K`
+- epochs: `60`
+- batch size: `128`
+- embedding dimension: `32`
+
+### 2. Transfer learning
+
+Pretrain on ZINC style molecular data:
+
+```bash
+python a2c_transfer_pretrain_chem.py
 ```
-Pretrain on ZINC-2M: python a2c_transfer_pretrain_chem.py
 
-Fintune on a specific dataset: python a2c_transfer_finetune_chem.py
+Finetune on downstream molecular benchmarks:
+
+```bash
+python a2c_transfer_finetune_chem.py
 ```
 
-## 🚀 Semi-supervised learning
+The finetuning script loops over these datasets:
 
-In the folder of 'semi_supervised', please run:
+- `bbbp`
+- `bace`
+- `tox21`
+- `toxcast`
+- `sider`
+- `clintox`
+- `muv`
+- `hiv`
 
-```
+### 3. Semi-supervised learning
+
+Move into the semi-supervised folder and run:
+
+```bash
+cd semi_supervised
 python main.py --exp=joint_cl_exp --semi_split=10 --dataset=COLLAB --save=joint_cl_exp --epochs=100 --batch_size=32 --lr=0.001
 ```
 
-## 📚 Log file
+More examples are provided in:
 
-We have preserved the model training logs in the 'log_file' folder. For instance, the unsupervised learning log results of GA2C on the MUTAG dataset are as follows:
+- `run_us_ts_ga2c.sh`
+- `semi_supervised/run_ss_ga2c.sh`
 
-```
-INFO:root:Running tu......  
-INFO:root:Using Device: cuda:2  
-INFO:root:Seed: 2024  
-INFO:root:Namespace(actor_view_lr=0.001, batch_size=128, config='config.yaml', critic_view_lr=0.001, dataset='MUTAG', downstream_classifier='SVC', drop_ratio=0.0, emb_dim=32, epochs=30, eval_interval=5, mlp_edge_model_dim=128, model_lr=0.001, num_gc_layers=3, pooling_type='layerwise', reg_lambda=0.0, seed=2024)  
-INFO:root:n_features: 1  
-INFO:root:Before training Embedding Eval Scores: Train: 0.8731 Val: 0.8731 Test: 0.8731  
-INFO:root:current reward: 5.539564609527588  
-INFO:root:Epoch 1, Model Loss 499.3180, Actor Loss 1100.0768, Critic Loss 12201.1574  
-INFO:root:Epoch 2, Model Loss 492.7890, Actor Loss 0.0000, Critic Loss 0.0000  
-INFO:root:Epoch 3, Model Loss 490.6491, Actor Loss 0.0000, Critic Loss 0.0000  
-INFO:root:current reward: 5.54935359954834  
-INFO:root:Epoch 4, Model Loss 489.2530, Actor Loss 907.6128, Critic Loss 14274.4207  
-INFO:root:Epoch 5, Model Loss 493.5720, Actor Loss 0.0000, Critic Loss 0.0000  
-INFO:root:Metric: accuracy Train: 0.8985 Val: 0.8985 Test: 0.8985  
-  
-...  
-  
-INFO:root:FinishedTraining!  
-INFO:root:Dataset: MUTAG  
-INFO:root:reg_lambda: 0.0  
-INFO:root:drop_ratio: 0.0  
-INFO:root:BestEpoch: 3  
-INFO:root:BestTrainScore: 0.9096491228070175  
-INFO:root:BestValidationScore: 0.9096491228070175  
-INFO:root:FinalTestScore: 0.9096491228070175  
-INFO:root:Mean Testscore: 90.34±0.39
+## 📊 Logged Results
+
+This repository already includes training logs in `log_file/`. A few final scores from the saved logs are listed below.
+
+### Unsupervised learning
+
+| Dataset | Mean Test Score |
+| --- | --- |
+| MUTAG | `90.34±0.39` |
+| NCI1 | `80.62±0.39` |
+| DD | `77.20±0.67` |
+| PROTEINS | `75.67±0.52` |
+| COLLAB | `72.13±0.34` |
+
+### Transfer learning
+
+| Dataset | Mean Test Score |
+| --- | --- |
+| BACE | `82.34±0.12` |
+| MUV | `79.76±0.40` |
+| BBBP | `74.30±1.03` |
+| ToxCast | `64.18±0.26` |
+
+### Semi-supervised learning
+
+Saved experiment logs under `semi_supervised/exp/joint_cl_exp/` include:
+
+| Dataset | Test Accuracy |
+| --- | --- |
+| MUTAG | `87.25 ± 7.27` |
+| PROTEINS | `75.84 ± 2.58` |
+
+## 📝 Notes
+
+- The saved logs in `log_file/` are a good starting point if you want to compare your own runs with the authors' outputs.
+- The scripts expect datasets under paths such as `original_datasets/` and `original_datasets/transfer/`.
+- The current `a2c_gcl_tu.py` file contains debugging lines (`print(...)` and `sys.exit()`), so you may need to remove them before running a full unsupervised training job from the current snapshot.
+
+## 📚 Citation
+
+If you find this repository useful, please cite:
+
+```bibtex
+@inproceedings{liu_ga2c,
+  title     = {Graph Contrastive Learning with Reinforcement Augmentation},
+  author    = {Liu, Ziyang and Wang, Chaokun and Wu, Cheng},
+  booktitle = {Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence, {IJCAI-24}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Kate Larson},
+  pages     = {2225--2233},
+  year      = {2024},
+  month     = {8},
+  note      = {Main Track},
+  doi       = {10.24963/ijcai.2024/246},
+  url       = {https://doi.org/10.24963/ijcai.2024/246}
+}
 ```
 
-The semi-supervised learning log results of GA2C on the MUV dataset are as follows:
+## 🙌 Acknowledgment
 
-```
-INFO:root:Using Device: cuda:2  
-INFO:root:Seed: 2024  
-INFO:root:Namespace(JK='last', batch_size=32, dataset='muv', decay=0.0, device=0, dropout_ratio=0.5, emb_dim=300, epochs=100, eval_train=1, gnn_type='gin', graph_pooling='mean', input_model_file='./models_ga2c/chem/1024pretrain_ga2c_seed_2024_reg_0.0_epoch_10.pth', lr=0.001, lr_scale=1, num_layer=3, num_workers=4, seed=2024, split='scaffold')  
-INFO:root:MoleculeDataset(93087)  
-INFO:root:scaffold  
-INFO:root:Data(edge_attr=[30, 2], id=[1], y=[17], x=[15, 2], edge_index=[2, 30])  
-INFO:root:====epoch 1 SupervisedLoss 1.5139828881726405  
-INFO:root:====Evaluation  
-INFO:root:EvalTrain: 0.6646693010909368 EvalVal: 0.6188019984544774 EvalTestt: 0.6005540732476364  
-INFO:root:====epoch 2 SupervisedLoss 0.4534396019915234  
-INFO:root:====Evaluation  
-INFO:root:EvalTrain: 0.6454371420363606 EvalVal: 0.6449092016253598 EvalTestt: 0.646384124498649  
-INFO:root:====epoch 3 SupervisedLoss 0.4506925367691132
-INFO:root:====Evaluation
-INFO:root:EvalTrain: 0.7177383277189476 EvalVal: 0.6803288988563876 EvalTestt: 0.6787941707186023
-INFO:root:====epoch 4 SupervisedLoss 0.44905699498268764
-INFO:root:====Evaluation
-INFO:root:EvalTrain: 0.7410288882863967 EvalVal: 0.7447307387734368 EvalTestt: 0.7058885491854934
-INFO:root:====epoch 5 SupervisedLoss 0.44011415983783064
-...
-INFO:root:====epoch 100 SupervisedLoss 0.3141621045593042
-INFO:root:====Evaluation
-INFO:root:EvalTrain: 0.9368990614094688 EvalVal: 0.745116806865475 EvalTestt: 0.7747370145508443
-INFO:root:FinalTestScore: 0.7925660626051265
-INFO:root:Mean Testscore: 79.76±0.40
-```
+Thanks for your interest in GA2C. If this project helps your research, a citation is greatly appreciated.

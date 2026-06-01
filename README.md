@@ -1,4 +1,4 @@
-# 🧠 GA2C: Graph Contrastive Learning with Reinforcement Augmentation
+# GA2C: Graph Contrastive Learning with Reinforcement Augmentation
 
 > A PyTorch implementation of **GA2C**, a graph contrastive learning framework that models graph augmentation as a sequential decision process.
 
